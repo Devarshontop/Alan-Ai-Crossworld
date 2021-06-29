@@ -394,7 +394,7 @@
  src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
 <script>
   var alanBtnInstance = alanBtn({
-    key: "80517dfc9e98bd174c5f462a5deabfdf2e956eca572e1d8b807a3e2338fdd0dc/stage",
+    key: "e7ec638f2d0710324c5f462a5deabfdf2e956eca572e1d8b807a3e2338fdd0dc/stage",
     onCommand: function (commandData) {
       if (commandData.command === "go:back") {
         //call client code that will react on the received command
@@ -403,6 +403,27 @@
     rootEl: document.getElementById("alan-btn"),
   });
 </script>	
-		
+<div class="weatherWidget" ></div>
+
+<script>
+   window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
+   window.weatherWidgetConfig.push({
+       selector:".weatherWidget",
+       apiKey:"KWHC7VEDF3CD26NTMP83YZAE9", //Sign up for your personal key
+       location:"United States, CA", //Enter an address
+       unitGroup:"us", //"us" or "metric"
+       forecastDays:5, //how many days forecast to show
+       title:"United States, CA", //optional title to show in the 
+       showTitle:true, 
+       showConditions:true
+   });
+  
+   (function() {
+   var d = document, s = d.createElement('script');
+   s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
+   s.setAttribute('data-timestamp', +new Date());
+   (d.head || d.body).appendChild(s);
+   })();
+</script>	
 	</body>
 </html>
