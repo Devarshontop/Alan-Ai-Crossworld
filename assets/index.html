@@ -251,7 +251,7 @@
 			// Create crossword object with the words and clues
 			var cw = new Crossword(words, clues);
 
-			// create the crossword grid (try to make it have a 1:1 width to height ratio in 10 tries)
+			// create the crossword grid 
 			var tries = 10;
 			var grid = cw.getSquareGrid(tries);
 
@@ -267,11 +267,11 @@
 				return;
 			}
 
-			// turn the crossword grid into HTML
+			// turns the crossword grid into HTML
 			var show_answers = true;
 			document.getElementById("crossword").innerHTML = CrosswordUtils.toHtml(grid, show_answers);
 
-			// make a nice legend for the clues
+			// makes a nice legend for the clues
 			var legend = cw.getLegend(grid);
 			addLegendToPage(legend);
 
