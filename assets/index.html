@@ -250,14 +250,35 @@ color:black;
 .nav-area li a:hover{
 background: #fff;
 color:#333;
+
 }
 	</style>
+	<br><br>
+	<script type="text/javascript">
+		// START DATE SCRIPT
+		
+		var showdate	= "yes"  	// SHOW THE DATE | yes | no |
+		
+		   if (showdate == "yes") {
+		document.write('<div id="date-location">');
+		var d=new Date();
+		var weekday=new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+		var monthname=new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+		document.write('<span class="date-font">' + weekday[d.getDay()] + ' ');
+		document.write(monthname[d.getMonth()] + ' ');
+		document.write(d.getDate() + '. ');
+		document.write(d.getFullYear())
+		document.write('<br></span>')
+		document.write('</div>');
+		}
+		</script>
 	<div class="nav-area">
 	<ul class="nav-area">
 		
 	<li><a href="https://youtu.be/jhk26Dg1Mvg">Good motivational songs</a></li>
 	</div>
 <div class="img">
+	<br>
 <img src="https://th.bing.com/th/id/OIP.uUEo8BU6iUr2R6B28bklcgHaHa?pid=ImgDet&rs=1" height="50" width="40">
 </div>
 	<div class="quote">
