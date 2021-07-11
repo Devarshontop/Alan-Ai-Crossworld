@@ -10,6 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 	<script src="jquery.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<script langauge 
 	<style>
 		@font-face {
 			font-family: 'Roboto';
@@ -708,7 +709,16 @@ color:blue;
 	<br><br><br><br>
 <h2><i>2021 &copy;</i></h2>
 </div>
-	
+<script>
+int delay = 1000; //milliseconds
+  ActionListener taskPerformer = new ActionListener() {
+      public void actionPerformed(ActionEvent evt) {
+          //...Perform a task...
+      }
+  };
+  new Timer(delay, taskPerformer).start();
+	</script>
+
 	<br><br>
 	<style> 
 	.last {
