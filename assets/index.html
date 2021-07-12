@@ -10,7 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 	<script src="jquery.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-	<script langauge 
+	
 	<style>
 		@font-face {
 			font-family: 'Roboto';
@@ -283,7 +283,7 @@ background: #fff;
 color:blue;
 }
 	</style>
-	
+	<p id="timer">5:00</p>
 	<div class="welcoming-Text">
 		<a href="https://www.canva.com/design/DAEiJcmbqkY/scc_G-1Ezxm1BKhPO0ETFA/view?utm_content=DAEiJcmbqkY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">Contact us</a>
 	</div>
@@ -445,13 +445,19 @@ color:blue;
 		<div class="ditem" onclick="setqcount(3)"><i class="fa fa-edit"></i> 3 Words</div>
 		<div class="ditem" onclick="setqcount(5)"><i class="fa fa-edit"></i> 5 Words</div>
 		<div class="ditem" onclick="resetsettings()"><i class="fa fa-refresh"></i> Reset</div>
-
+		<div class="ditem" onclick="newgame"(8)><i class="fa fa-edit"></i>8 words</div>
+        <div class="ditem" onclick="braingame"><i class="fa fa-edit">braingame</i>
 	</div>
 
 	<script>
 
 		function setqcount(n) {
 			appdata.qcount = n
+			saveData()
+			location.reload()
+		}
+		function newgame (n) {
+			appdata.qcount = n 
 			saveData()
 			location.reload()
 		}
