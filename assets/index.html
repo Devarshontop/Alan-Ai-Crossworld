@@ -253,14 +253,17 @@ background: #fff;
 color:#333;
 }
 	</style>
+	<div class="timer">
+	<div style="color:blue">
 	<h1>
+	
 	<script></script>
 	<!-- Display the countdown timer in an element -->
 	<p id="demo"></p>
 	
 	<script>
 	// Set the date we're counting down to
-	var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+	var countDownDate = new Date("July 14, 2021 1:00").getTime();
 	
 	// Update the count down every 1 second
 	var x = setInterval(function() {
@@ -288,7 +291,17 @@ color:#333;
 	  }
 	}, 1000);
 	</script>
+	<script>
+	function startGame() {
+		myGamePiece = new component(30, 30, "red", 10, 120);
+		myGamePiece.gravity = 0.05;
+		myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+		myGameArea.start();
+	  }
 	</h1>
+</script>
+</div>
+</div>
 
 		<br><br>
 	<script type="text/javascript">
