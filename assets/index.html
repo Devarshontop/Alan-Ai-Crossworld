@@ -10,7 +10,52 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 	<script src="jquery.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-	
+	<script>
+		function startTimer()
+{
+   var obj = document.getElementById("timer");
+
+    /* make sure to tell javascript that 'seconds' is  Number that 
+        comes from the input box */
+   var seconds;
+
+
+   seconds = Number(obj.display.value);
+
+/*  Don't need this *AND* seconds-- */
+//       seconds = seconds - 1;
+
+   if (seconds <= 0)    
+   {
+   clearInterval(Id);
+      seconds = 0;
+   }
+    else
+        {
+            seconds--;
+        }
+
+  obj.display.value = seconds;
+}
+
+</script>
+</head>
+<body>
+    <form id="timer" action="#">
+<p><input type="number" name="display"  size="
+    20" value="30" /></p>
+
+<!-- changed the interval from 100ms to 1000ms -->
+<p><input type="button" value="Start"
+    onclick="Id=setInterval('startTimer()', 1000)" />
+</form>
+
+   <input type="text" id="myInput" placeholder="Enter number..." >
+   <button onclick="myFunction()">Start Counter</button>  
+   <span id="countdown"></span>
+</script>
+
+	</script>
 	<style>
 		@font-face {
 			font-family: 'Roboto';
