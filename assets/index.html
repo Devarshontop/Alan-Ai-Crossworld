@@ -10,6 +10,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 	<script src="jquery.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<br><br>	
+	<div class="img">
+		<div style=float:left;>
+		<img src="https://th.bing.com/th/id/OIP.uUEo8BU6iUr2R6B28bklcgHaHa?pid=ImgDet&rs=1" height="70" width="60">
+		</div>
+		<br><br>
+	<!--Good motivational Songs-->
+	<div class="nav-area">
+		<ul class="nav-area">
+			
+		<li><a href="https://youtu.be/jhk26Dg1Mvg">Good motivational songs</a></li>
+		</div>
+		<br><br>
+		<!--Quote-->
+<div class="quote">
+	<br>
+	<div style=background:url(https://th.bing.com/th/id/OIP.wLyAhcbOY9H8CWtulhg6vwHaEK?pid=ImgDet&rs=1); color: #FFFFFF; padding: 5px;>
+  <h2>Everyone is welcome to play. We have made this game so even people who don't know English could play.
+</h2>
+	<h2><strong>Enjoy!</strong></h2>
+	</div>
+	<br><br>
+	<!--Timer-->
 	<script>
 		function startTimer()
 {
@@ -40,6 +63,37 @@
 
 </script>
 </head>
+<!--Date-->
+<br><br>
+<div class="Date">
+<div style=color:#00BFFF; size:19px;>
+<script type="text/javascript">
+	// START DATE SCRIPT
+	
+	var showdate	= "yes"  	// SHOW THE DATE | yes | no |
+	
+	   if (showdate == "yes") {
+	document.write('<div id="date-location">');
+	var d=new Date();
+	var weekday=new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+	var monthname=new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+	document.write('<span class="date-font">' + weekday[d.getDay()] + ' ');
+	document.write(monthname[d.getMonth()] + ' ');
+	document.write(d.getDate() + '. ');
+	document.write(d.getFullYear())
+	document.write('<br></span>')
+	document.write('</div>');
+	}
+	</script>
+	</div>
+	<br><br>
+	<div class="Timer">
+	<div style= background:url(https://th.bing.com/th/id/OIP.5y1OKwwUxNp4sf7SKTpnCQHaFj?pid=ImgDet&rs=1); float:left; text-align:left; font-family:poppins; font-size:14px;> 
+	<h3>We have implemented a countdown timer where you guys could put the time that is the most comfortable for you to finish the crossword
+	game. You guys could also put less time to challenge yourselves when playing the game. 
+	</h3>
+	</div>
+	<br><br>
 <body>
     <form id="timer" action="#">
 <p><input type="number" name="display"  size="
@@ -49,10 +103,6 @@
 <p><input type="button" value="Start"
     onclick="Id=setInterval('startTimer()', 1000)" />
 </form>
-
-   <input type="text" id="myInput" placeholder="Enter number..." >
-   <button onclick="myFunction()">Start Counter</button>  
-   <span id="countdown"></span>
 </script>
 
 	</script>
@@ -298,45 +348,6 @@ background: #fff;
 color:#333;
 }
 	</style>
-	<br><br>
-	   <!--Date-->
-	   <br><br>
-	   <script type="text/javascript">
-		   // START DATE SCRIPT
-		   
-		   var showdate	= "yes"  	// SHOW THE DATE | yes | no |
-		   
-			  if (showdate == "yes") {
-		   document.write('<div id="date-location">');
-		   var d=new Date();
-		   var weekday=new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
-		   var monthname=new Array('January','February','March','April','May','June','July','August','September','October','November','December');
-		   document.write('<span class="date-font">' + weekday[d.getDay()] + ' ');
-		   document.write(monthname[d.getMonth()] + ' ');
-		   document.write(d.getDate() + '. ');
-		   document.write(d.getFullYear())
-		   document.write('<br></span>')
-		   document.write('</div>');
-		   }
-		   </script>	
-    <!--Good motivational Songs-->
-	<div class="nav-area">
-	<ul class="nav-area">
-		
-	<li><a href="https://youtu.be/jhk26Dg1Mvg">Good motivational songs</a></li>
-	</div>
-<div class="img">
-	<br>
-<img src="https://th.bing.com/th/id/OIP.uUEo8BU6iUr2R6B28bklcgHaHa?pid=ImgDet&rs=1" height="50" width="40">
-</div>
-	<!--Quote-->
-<div class="quote">
-		<br>
-		<div style=background:url(https://th.bing.com/th/id/OIP.wLyAhcbOY9H8CWtulhg6vwHaEK?pid=ImgDet&rs=1); color: #FFFFFF; padding: 5px;>
-	  <h2>Everyone is welcome to play. We have made this game so even people who don't know English could play.
-	</h2>
-		<h2><strong>Enjoy!</strong></h2>
-		</div>
 	<!--Crossword Game Code-->
 	<br>
 	<script src="crossword.js"></script>
@@ -647,6 +658,7 @@ color:#333;
 	</head>
 	<!--Calender-->
 	<div class="hi">
+	<br><br>
 	<h1><strong>Check the date!</strong></h1>
 	</div>
 	<body>
