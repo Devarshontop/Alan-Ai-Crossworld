@@ -254,64 +254,26 @@ color:#333;
 }
 	</style>
 	<br><br>
-	<!--Countdown Timer-->
-	<script></script>
-	<!-- Display the countdown timer in an element -->
-	<p id="demo"></p>
-	
-	<script>
-	// Set the date we're counting down to
-	var countDownDate = new Date("July 14, 2021 1:30").getTime();
-	
-	// Update the count down every 1 second
-	var x = setInterval(function() {
-	
-	  // Get today's date and time
-	  var now = new Date().getTime();
-	
-	  // Find the distance between now and the count down date
-	  var distance = countDownDate - now;
-	
-	  // Time calculations for days, hours, minutes and seconds
-	  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-	  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-	  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-	  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-	
-	  // Display the result in the element with id="demo"
-	  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-	  + minutes + "m " + seconds + "s ";
-	
-	  // If the count down is finished, write some text
-	  if (distance < 0) {
-		clearInterval(x);
-		document.getElementById("demo").innerHTML = "EXPIRED";
-	  }
-	}, 1000);
-	</script>
-	
-
-        <!--Date-->
-		<br><br>
-	<script type="text/javascript">
-		// START DATE SCRIPT
-		
-		var showdate	= "yes"  	// SHOW THE DATE | yes | no |
-		
-		   if (showdate == "yes") {
-		document.write('<div id="date-location">');
-		var d=new Date();
-		var weekday=new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
-		var monthname=new Array('January','February','March','April','May','June','July','August','September','October','November','December');
-		document.write('<span class="date-font">' + weekday[d.getDay()] + ' ');
-		document.write(monthname[d.getMonth()] + ' ');
-		document.write(d.getDate() + '. ');
-		document.write(d.getFullYear())
-		document.write('<br></span>')
-		document.write('</div>');
-		}
-		</script>
-		
+	   <!--Date-->
+	   <br><br>
+	   <script type="text/javascript">
+		   // START DATE SCRIPT
+		   
+		   var showdate	= "yes"  	// SHOW THE DATE | yes | no |
+		   
+			  if (showdate == "yes") {
+		   document.write('<div id="date-location">');
+		   var d=new Date();
+		   var weekday=new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+		   var monthname=new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+		   document.write('<span class="date-font">' + weekday[d.getDay()] + ' ');
+		   document.write(monthname[d.getMonth()] + ' ');
+		   document.write(d.getDate() + '. ');
+		   document.write(d.getFullYear())
+		   document.write('<br></span>')
+		   document.write('</div>');
+		   }
+		   </script>	
     <!--Good motivational Songs-->
 	<div class="nav-area">
 	<ul class="nav-area">
@@ -717,52 +679,22 @@ color:#333;
 	<ul></ul><a href="https://minutehack.com/guides/tips-for-solving-crossword-puzzles">Another good website</a></ul>
 </ol>
 </div>
+<br><br><br>
 <div class="welcoming-Text">
 	<a href="https://www.canva.com/design/DAEiJcmbqkY/scc_G-1Ezxm1BKhPO0ETFA/view?utm_content=DAEiJcmbqkY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">Contact us</a>
 </div>
-<html>
-</script>
-
-    </script>
-  </body>
-</html>
 <div class="last">
 	<br><br>
 <h2><i>2021 &copy;</i></h2>
 </div>
 	<style> 
 	.welcoming-Text {
-position: absolute;
-width: 600px
-height: 300px;
-margin:20% 30%;
-text-align:left;
-background: white;
-float:right;
-}
-.welcoming-Text h1 {
-text-align: left;
-float:right;
-color:black;
-text-transform: uppercase;
-font-size: 40px;
-}
-.welcoming-Text a {
-border: 1px solid #fff;
-padding: 10px 25px;
-text-decoration: none;
-text-transform: uppercase;
-font-size:14px;
-margin-top:20px;
-color: white;
-text-align:left; 
-}
-.welcoming-Text a:hover{
-background: blue;
-color:black;
-	.last {
-	float:left;
+float: center;
+position:center;
 	}
+.last {
+float:left;
+}
 	.Resources {
 	float: bottom right;
 	text-align: center;
