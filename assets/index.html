@@ -10,6 +10,59 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 	<script src="jquery.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<br><br>
+	<html>
+<head>
+	<form action="action_page.php" style="border:1px solid #ccc">
+		<div class="container">
+		  <h1>Sign Up</h1>
+		  <p>Please fill in this form to create an account.</p>
+		  <hr>
+	  
+		  <label for="email"><b>Email</b></label>
+		  <input type="text" placeholder="Enter Email" name="email" required>
+	  
+		  <label for="psw"><b>Password</b></label>
+		  <input type="password" placeholder="Enter Password" name="psw" required>
+	  
+		  <label for="psw-repeat"><b>Repeat Password</b></label>
+		  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+	  
+		  <label>
+			<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+		  </label>
+	  
+		  <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+	  
+		  <div class="clearfix">
+			<button type="button" class="cancelbtn">Cancel</button>
+			<button type="submit" class="signupbtn">Sign Up</button>
+		  </div>
+		</div>
+	  </form>
+
+	<div class="Date">
+	<div style="color:blue">
+		<script type="text/javascript">
+		
+			// START DATE SCRIPT
+			
+			var showdate	= "yes"  	// SHOW THE DATE | yes | no |
+			
+			   if (showdate == "yes") {
+			document.write('<div id="date-location">');
+			var d=new Date();
+			var weekday=new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+			var monthname=new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+			document.write('<span class="date-font">' + weekday[d.getDay()] + ' ');
+			document.write(monthname[d.getMonth()] + ' ');
+			document.write(d.getDate() + '. ');
+			document.write(d.getFullYear())
+			document.write('<br></span>')
+			document.write('</div>');
+			}
+			</script>
+			</div>
 	<!--Good motivational Songs-->
 	<div class="nav-area">
 		<ul class="nav-area">
@@ -70,9 +123,10 @@ SUN IMAGE HERE: https://chivethebrigade.files.wordpress.com/2012/03/sun-920-32.j
 <div class="quote">
 	<br><br><br><br><br><br><br><br><br><br><br><br>
 	<div style=background:url(https://th.bing.com/th/id/OIP.wLyAhcbOY9H8CWtulhg6vwHaEK?pid=ImgDet&rs=1); color: #FFFFFF; padding: 5px;>
-  <h2>Everyone is welcome to play. We have made this game so even people who don't know English could play.
+  <h2>EVERYONE IS WELCOME TO PLAY. WE HAVE MADE THIS GAME SO EVEN PEOPLE WHO DONT'T KNOW ENGLISH COULD PLAY.
 </h2>
-	<h2><strong>Enjoy!</strong></h2>
+<br>
+	<h2><strong>ENJOY!</strong></h2>
 	</div>
 	<br><br>
 	<!--Timer-->
@@ -111,6 +165,7 @@ SUN IMAGE HERE: https://chivethebrigade.files.wordpress.com/2012/03/sun-920-32.j
 </head>
 <!--Date-->
 <br><br>
+<<<<<<< HEAD
 <div class="Date">
 <div style  color:#00BFFF;>
 <script type="text/javascript">
@@ -132,11 +187,13 @@ SUN IMAGE HERE: https://chivethebrigade.files.wordpress.com/2012/03/sun-920-32.j
 	}
 	</script>
 	</div>
+=======
+>>>>>>> 57697abb159d73374743599167392ed79aecab39
 	<br><br>
 	<div class="Timer">
 	<div style= background:url(https://th.bing.com/th/id/OIP.5y1OKwwUxNp4sf7SKTpnCQHaFj?pid=ImgDet&rs=1); float:left; text-align:left; font-family:poppins; font-size:14px;> 
-	<h3>We have implemented a countdown timer where you guys could put the time that is the most comfortable for you to finish the crossword
-	game. You guys could also put less time to challenge yourselves when playing the game. 
+	<h3>WE HAVE IMPLEMENTED A COUNTDOWN TIMER WHERE YOU GUYS COULD PUT THE TIME THAT IS THE MOST COMFORTABLE FOR YOU TO FINISH THE CROSSWORD GAME. 
+	GAME. YOU GUYS COULD ALSO PUT LESS TIME TO CHALLENGE YOURSELVES WHEN PLAYING THE GAME. 
 	</h3>
 	</div>
 	<br><br>
@@ -264,7 +321,7 @@ margin:0px;
 		}
 
 		.no-border {
-			background-color: grey;
+			background-color: black;
 		}
 
 		.crossword .no-border {
@@ -274,6 +331,7 @@ margin:0px;
 		#clues {
 			font-size: 16px;
 			margin: 0 auto;
+			color:#000000;
 		}
 
 		#clues td {
@@ -533,7 +591,74 @@ Simply rotates the carousel around the Y axis by using rotateY and starting at i
   to {
     transform: rotateY(0deg);
   }
-</style>
+  * {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+ </style>
 	<!--Crossword Game Code-->
 	<br>
 	<script src="crossword.js"></script>
