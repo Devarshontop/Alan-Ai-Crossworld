@@ -33,6 +33,9 @@
 	</div>
 	<br><br>
 	<!--Timer-->
+	<canvas id="canvas-number"></canvas>
+<canvas id="canvas-dots"></canvas>
+ 
 	<script>
 		function startTimer()
 {
@@ -66,7 +69,7 @@
 <!--Date-->
 <br><br>
 <div class="Date">
-<div style=color:#00BFFF; size:19px;>
+<div style  color:#00BFFF;>
 <script type="text/javascript">
 	// START DATE SCRIPT
 	
@@ -346,6 +349,25 @@ color:blue;
 .nav-area li a:hover{
 background: #fff;
 color:#333;
+@import url(https://fonts.googleapis.com/css?family=Lato:900);
+
+body {
+	background-color: #24282f;
+	margin: 0;
+	padding: 0;
+}
+
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#canvas-number {
+	width: 680px;
+	height: 420px;
+}
+
 }
 	</style>
 	<!--Crossword Game Code-->
