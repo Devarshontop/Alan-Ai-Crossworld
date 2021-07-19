@@ -12,11 +12,15 @@
 	<br><br>
 	<html>
 <head>
+<<<<<<< HEAD
 	<div id="new-header">
         <script>
             $("#new-header").load("header.html");
         </script>
     </div>
+=======
+
+>>>>>>> 9e23f5f68e0bafb8624baba8c77fcab3160ae150
 	<div class="Date">
 	<div style="color:blue">
 		<script type="text/javascript">
@@ -108,6 +112,9 @@ SUN IMAGE HERE: https://chivethebrigade.files.wordpress.com/2012/03/sun-920-32.j
 	</div>
 	<br><br>
 	<!--Timer-->
+	<canvas id="canvas-number"></canvas>
+<canvas id="canvas-dots"></canvas>
+ 
 	<script>
 		function startTimer()
 {
@@ -140,6 +147,27 @@ SUN IMAGE HERE: https://chivethebrigade.files.wordpress.com/2012/03/sun-920-32.j
 </head>
 <!--Date-->
 <br><br>
+<div class="Date">
+<div style  color:#00BFFF;>
+<script type="text/javascript">
+	// START DATE SCRIPT
+	
+	var showdate	= "yes"  	// SHOW THE DATE | yes | no |
+	
+	   if (showdate == "yes") {
+	document.write('<div id="date-location">');
+	var d=new Date();
+	var weekday=new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+	var monthname=new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+	document.write('<span class="date-font">' + weekday[d.getDay()] + ' ');
+	document.write(monthname[d.getMonth()] + ' ');
+	document.write(d.getDate() + '. ');
+	document.write(d.getFullYear())
+	document.write('<br></span>')
+	document.write('</div>');
+	}
+	</script>
+	</div>
 	<br><br>
 	<div class="Timer">
 	<div style= background:url(https://th.bing.com/th/id/OIP.5y1OKwwUxNp4sf7SKTpnCQHaFj?pid=ImgDet&rs=1); float:left; text-align:left; font-family:poppins; font-size:14px;> 
@@ -401,6 +429,25 @@ color:blue;
 .nav-area li a:hover{
 background: #fff;
 color:#333;
+@import url(https://fonts.googleapis.com/css?family=Lato:900);
+
+body {
+	background-color: #24282f;
+	margin: 0;
+	padding: 0;
+}
+
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#canvas-number {
+	width: 680px;
+	height: 420px;
+}
+
 }
 *, *::before, *::after {
   box-sizing: border-box; /* Too much math below to be concerned with standard CSS Box Model element dimensions calculations. Let's not have to account for padding/margins/borders on anything here. */
