@@ -1,0 +1,38 @@
+<!Doctype html>
+<html>
+<header>
+<h1><strong>Trivia Game</strong></h1>
+</header>
+<body>
+<!--Timer-->
+<script>
+    function startTimer()
+{
+var obj = document.getElementById("timer");
+
+/* make sure to tell javascript that 'seconds' is  Number that 
+    comes from the input box */
+var seconds;
+
+
+seconds = Number(obj.display.value);
+
+/*  Don't need this *AND* seconds-- */
+//       seconds = seconds - 1;
+
+if (seconds <= 0)    
+{
+clearInterval(Id);
+  seconds = 0;
+}
+else
+    {
+        seconds--;
+    }
+
+obj.display.value = seconds;
+}
+
+</script>
+<h2>1. </h2>
+</body>
