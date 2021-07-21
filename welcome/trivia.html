@@ -5,35 +5,23 @@
 </header>
 <body>
 <a href="welcome.html">Game Page</a>
-<!--Timer-->
+<div class="Timer">
 <script>
-    function startTimer()
-{
-var obj = document.getElementById("timer");
-
-/* make sure to tell javascript that 'seconds' is  Number that 
-    comes from the input box */
-var seconds;
-
-
-seconds = Number(obj.display.value);
-
-/*  Don't need this *AND* seconds-- */
-//       seconds = seconds - 1;
-
-if (seconds <= 0)    
-{
-clearInterval(Id);
-  seconds = 0;
-}
-else
-    {
-        seconds--;
-    }
-
-obj.display.value = seconds;
-}
-
+    <form id="timer" action="#">
+<p><input type="number" name="display"  size="
+    20" value="30" /></p>
+<!-- changed the interval from 100ms to 1000ms -->
+<p><input type="button" value="Start"
+    onclick="Id=setInterval('startTimer()', 1000)" />
 </script>
-<h2>1. </h2>
+</form>
+</div>
+<h2>1.Who played Sabrina on the TV show Bewitched?</h2>
+<h2>2.What sport is best known as the ‘king of sports?</h2>
+<h2>3. What’s the national sport of Canada?</h2>
+<h2>4. What do you call it when a bowler makes three strikes in a row?</h2>
+<h2>5. What's The Ruling Dynasty Of Monaco?</h2>
+<h2>6. Which Country Has The Most Fresh Water?</h2>
+<
+
 </body>
