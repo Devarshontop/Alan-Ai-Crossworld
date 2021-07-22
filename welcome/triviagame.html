@@ -1,12 +1,11 @@
 <!Doctype html>
 <html>
 <header>
-    <title>Awesome Quiz App | CodingNepal</title>
     <link rel="stylesheet" href="style.css">
     <!-- FontAweome CDN Link for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
-<h1><strong>Trivia Game</strong></h1>
+<br><br>
 </header>
 <body>
 <a href="welcome.html">Game Page</a>
@@ -76,6 +75,9 @@
 </html>
 </html>
 <style>
+    .a {
+    text-align:center;
+    }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
     margin: 0;
@@ -416,59 +418,82 @@ footer button.show{
 let questions = [
     {
     numb: 1,
-    question: "What does HTML stand for?",
-    answer: "Hyper Text Markup Language",
+    question: "What do you call it when a bowler makes three strikes in a row?",
+    answer: "Turkey",
     options: [
-      "Hyper Text Preprocessor",
-      "Hyper Text Markup Language",
-      "Hyper Text Multiple Language",
-      "Hyper Tool Multi Language"
+      "Sandwich",
+      "Turkey",
+      "Goated",
+      "Chicken dinner"
     ]
   },
     {
     numb: 2,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
+    question: "Which Colors Do Colorblind People Have Trouble Distinguishing?",
+    answer: "Red and green.",
     options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
+      "Red and blue",
+      "Blue and yellow",
+      "Red and green",
+      "green and brown",
+      "pink and purple"
     ]
   },
     {
     numb: 3,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
+    question: "How many dimples does an average golf ball have?",
+    answer: "336",
     options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
+      "145",
+      "336",
+      "455",
+      "657"
     ]
   },
     {
     numb: 4,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
+    question: "Which Country Consumes The Most Chocolate Per Capita?",
+    answer: "Switzerland",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+      "Cananda",
+      "Texas",
+      "Switzerland",
+      "Australia"
     ]
   },
     {
     numb: 5,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
+    question: "What City Elected Sadiq Khan, Its First Mayor From An Ethnic Minority, In 2016?",
+    answer: "London, England.",
     options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
+      "Australia, Canada",
+      "Texas, Florida",
+      "India, Japan",
+      "London, England."
     ]
-  },
+    },
+    {
+    numb:6,
+    question: "Who Won The First Football World Cup, And What Year Was It?",
+    answer: "Uruguay,1930.",
+    options: [
+    "Brazil,1935",
+    "Uruguay,1930",
+    "Mexico, 1942",
+    "Italy, 1932"
+]
+    },
+{ 
+numb:7,
+question: "Who Allegedly Wrote The Song “Golden Years” For Elvis Presley But Ended Up Recording It Himself?",
+answer: "David Bowie.",
+options: [
+"David Bowie",
+"Bruno Mars",
+"Don't know",
+"Lily"
+]
+ },
   // you can uncomment the below codes and make duplicate as more as you want to add question
   // but remember you need to give the numb value serialize like 1,2,3,5,6,7,8,9.....
   //   {
@@ -679,7 +704,6 @@ function queCounter(index){
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
 </script>
-
 
 
 
