@@ -82,7 +82,7 @@
 					<!-- Section 3 -->
 					<div data-sr="enter top over 1s, wait 0.3s, move 24px, reset" class="col-md-4">
 						<i class="fa fa-newspaper-o"></i>
-						<h3>Free to Play</h3>
+						<h3>Game Available to anyone</h3>
 						<div class="colored-line-small-center"></div>
 						<p>Our game is free-to-play so anyone can play and it also features a voice tranlation feature for people not familiar with English.</p>						
 					</div>
@@ -159,7 +159,7 @@
 						<span class="social">
 							<a href="#"><i class="fa fa-facebook-square"></i></a>
 							<a href="#"><i class="fa fa-twitter-square"></i></a> 
-							<a href="#"><i class="fa fa-google-plus-square"></i></a>
+							<a href="harshsheth206@gmail.com"><i class="fa fa-google-plus-square"></i></a>
 						</span>
 					</p>
 				</div>
@@ -181,5 +181,19 @@
 		<!-- FUNCTIONS -->
 		<script src="js/functions.js"></script>
 
+		<div class="alan-btn"></div>
+		<script type="text/javascript"
+ src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+<script>
+  var alanBtnInstance = alanBtn({
+    key: "eaf854ce4e7503db7be9112d8c1ae5e92e956eca572e1d8b807a3e2338fdd0dc/stage",
+    onCommand: function (commandData) {
+      if (commandData.command === "go:back") {
+        //call client code that will react on the received command
+      }
+    },
+    rootEl: document.getElementById("alan-btn"),
+  });
+</script>
 </body>
 </html>
