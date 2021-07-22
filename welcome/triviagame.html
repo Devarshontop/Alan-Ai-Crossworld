@@ -1,0 +1,358 @@
+<!Doctype html>
+<html>
+<header>
+<h1><strong>Trivia Game</strong></h1>
+</header>
+<body>
+<a href="welcome.html">Game Page</a>
+<div id="config">
+    <div id="mute"></div>
+  </div>
+  <div id="stage">
+    <div id="carosel">
+      <div class="screen">
+        <div class="promo">
+          <div id="frame1"></div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="promo">
+          <div id="frame2"></div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="promo">
+          <div id="frame3"></div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="promo">
+           <div id="frame4"></div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="promo">
+          <div id="frame5"></div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="promo">
+          <div id="frame6"></div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="promo">
+          <div id="frame7"></div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="promo">
+          <div id="frame8"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  var carosel, iscreen, radius, lens, mouseX=0, mouseY=0, addX=0;
+
+$(document).ready(init);
+
+function init() {
+  carosel = $('#carosel');
+  iscreen = $('.screen');
+  lens = iscreen.length;
+  radius = carosel.width/2;
+  // set screen props
+  for (let i = 0; i < lens; i++) {
+    var item = iscreen.eq(i);
+    var $s = 1 + randomInt(10);
+    var $d = 1 - randomInt(8);
+
+    TweenMax.set(item, {
+      rotationY: 360/lens * i,
+      delay: $d,
+      autoAlpha: 1
+    });
+    TweenMax.to(item.find('.promo'), $s, {
+      delay: $d,
+      autoAlpha: 1
+    });
+  }
+  // set mouse x & y props and looper ticker
+  window.addEventListener("mousemove", onMouseMove = e => {
+    mouseX = (window.innerWidth/2 - e.pageX)/400;
+    mouseY = (window.innerHeight/2 - e.pageY)/100;
+  });
+  setInterval(looper, 15);
+}
+
+randomInt = $n =>
+  Math.floor(Math.random()*$n + 1)/10;
+
+// loops & sets carousel 3d properties
+looper = () => {
+  addX += mouseX;
+  TweenMax.to(carosel, 1, {
+    rotationY: addX,
+    rotationX: mouseY,
+  });
+};
+
+var tag = document.createElement('script');
+tag.src = "//youtube.com/player_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+onYouTubePlayerAPIReady = () => {
+  yt = new YT.Player('frame1', {
+    playerVars: {
+      autoplay: 1,
+      playlist: '1-Gneo_8F1w'
+    },
+    videoId: '1-Gneo_8F1w',
+    events: {
+      onReady: onPlayerReady
+    }
+  });
+  yt = new YT.Player('frame2', {
+    playerVars: {
+      autoplay: 1,
+      start: 4,
+      playlist: 'uU34kPPtzXY'
+    },
+    videoId: 'uU34kPPtzXY',
+    events: {
+      onReady: onPlayerReady
+    }
+  });
+  yt = new YT.Player('frame3', {
+    playerVars: {
+      autoplay: 1,
+      playlist: 'uH0hylgmrxM'
+    },
+    videoId: 'uH0hylgmrxM',
+    events: {
+      onReady: onPlayerReady
+    }
+  });
+  yt = new YT.Player('frame4', {
+    playerVars: {
+      autoplay: 1,
+      playlist: '1-Gneo_8F1w'
+    },
+    videoId: '1-Gneo_8F1w',
+    events: {
+      onReady: onPlayerReady
+    }
+  });
+  yt = new YT.Player('frame5', {
+    playerVars: {
+      autoplay: 1,
+      playlist: 'H6cDTVKHsek'
+    },
+    videoId: 'H6cDTVKHsek',
+    events: {
+      onReady: onPlayerReady
+    }
+  });
+  yt = new YT.Player('frame6', {
+    playerVars: {
+      autoplay: 1,
+      start: 16,
+      end: 171,
+      playlist: 'ShaAXbrgPfw'
+    },
+    videoId: 'ShaAXbrgPfw',
+    events: {
+      onReady: onPlayerReady
+    }
+  });
+  yt = new YT.Player('frame7', {
+    playerVars: {
+      autoplay: 1,
+      playlist: '1-Gneo_8F1w'
+    },
+    videoId: '1-Gneo_8F1w',
+    events: {
+      onReady: onPlayerReady
+    }
+  });
+  yt = new YT.Player('frame8', {
+    playerVars: {
+      start: 189,
+      autoplay: 1,
+      end: 210,
+      playlist: 'C5VLjgxJ2zk'
+    },
+    videoId: 'C5VLjgxJ2zk',
+    events: {
+      onReady: onPlayerReady
+    }
+  });
+};
+
+onPlayerReady = e =>
+  e.target.setPlaybackQuality('small').setLoop(true).mute();
+<div class="Timer">
+<script>
+    <form id="timer" action="#">
+<p><input type="number" name="display"  size="
+    20" value="30" /></p>
+<!-- changed the interval from 100ms to 1000ms -->
+<p><input type="button" value="Start"
+    onclick="Id=setInterval('startTimer()', 1000)" />
+</script>
+</form>
+</div>
+<div class="a">
+    <h2>1.Who played Sabrina on the TV show Bewitched?</h2>
+    </div>
+<div class="b">
+    <h2>2.What sport is best known as the ‘king of sports?</h2>
+    </div>
+<div class="c">
+    <h2>3. What’s the national sport of Canada?</h2>
+    </div>
+<div class="d">
+    <h2>4. What do you call it when a bowler makes three strikes in a row?</h2>
+    </div>
+    <div class="e">
+<h2>5. What's The Ruling Dynasty Of Monaco?</h2>
+</div>
+<div class="f">
+    <h2>6. Which Country Has The Most Fresh Water?</h2>    
+    </div>
+    <div class="g">
+<h2>7. What is the airspeed velocity of an unladen swallow?</h2>
+</div>
+<div class="h">
+<h2>8. What is the romanized Arabic word for "moon"?</h2>
+</div>
+<div class="i">
+<h2>9. Which of the following languages does NOT use gender as a part of its grammar?</h2>
+</div>
+
+
+<div class="alan-btn"></div>
+<script type="text/javascript"
+ src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+<script>
+  var alanBtnInstance = alanBtn({
+    key: "9c3c410290a1dc7c7be9112d8c1ae5e92e956eca572e1d8b807a3e2338fdd0dc/stage",
+    onCommand: function (commandData) {
+      if (commandData.command === "go:back") {
+        //call client code that will react on the received command
+      }
+    },
+    rootEl: document.getElementById("alan-btn"),
+  });
+</script>
+</body>
+<style>
+body {
+background:url(https://th.bing.com/th/id/R.47678dee6c60807c5e75c0f4ea9b4702?rik=Fj5YpRTGwYXYWw&pid=ImgRaw);
+}
+.a {
+color:#87CEFA;
+}
+.b {
+color:#7FFF00;
+}
+.c {
+color:#FF6666;
+}
+.d {
+color:#B284BE;
+}
+.e {
+color:#FFB366;
+}
+.f {
+color:#99FFFF;
+}
+.g {
+color:#AAFF99;
+}
+.h {
+color:#1966FF;
+}
+.i {
+color:#FFBB33;
+}
+#config {
+  position: absolute;
+  top: 0; right: 0;
+  width: 320px; height: 200px;
+  background: linear-gradient(to right top, transparent 50%, rgb(92 100 114 /.35) 50%);
+}
+
+#stage {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  perspective: 500px;
+}
+
+#carosel {
+  /*The 42vw is from initial load of iframe html (does it update as it should)*/
+  --radius: 42vw;
+  width: calc(var(--radius)*2);
+  height: calc(var(--radius)*1.25);
+  transform: translateZ(calc(var(--radius)*-1));
+  transform-style: preserve-3d;
+}
+/*
+#carosel:after {
+  content: '';
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background: rgba(0, 0, 0, .6);
+  border-radius: 50%;
+  transform: rotateX(90deg);
+}
+*/
+/*Remov Visibility by turning TweenMax into CSS code*/
+.screen {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 25%; height: 25%;
+  border: 5px inset rgb(29 203 84 /.75);
+  box-shadow: 0 0 15px 3px rgb(110 72 221 /.9);
+  transform-origin: 50% 50% calc(var(--radius)*-1);
+  /* The -50%,-50% below is always correct. The var(--radius) not always*/
+  transform: translate3d(-50%,-50%,var(--radius));
+  transform-style: preserve-3d;
+  visibility: hidden;
+}
+
+.screen:after {
+  content: '';
+  position: absolute;
+  width: 100%; height: 100%;
+  background: rgb(0 0 0 /.6);
+  transform: rotateX(180deg);
+  transform-origin: top;
+  backface-visibility: hidden;
+}
+/*Remov Visibility by making animateIn a CSS animation*/
+.promo {
+  width: 100%; height: 100%;
+  opacity: 0;
+  color: aqua;
+  font-size: 72px;
+  transform-style: preserve-3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  visibility: visible;
+  -webkit-box-reflect: below 10px -webkit-linear-gradient(bottom, rgb(0 0 0 /.33) 0%, transparent 40%);
+}
+
+iframe {
+  pointer-events: none;
+  width: 100%; height: 200%;
+  transform: scale(1.1, 1.17);
+}
+  </style>
